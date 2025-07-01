@@ -11,6 +11,7 @@ public class Peleador {
     //Constructor
     public Peleador (String nombre) {
         this.nombre = nombre;
+        System.out.println("Nombre del peleador: " + nombre);
     }
 
     //metodo elegir tipo luchador
@@ -22,6 +23,7 @@ public class Peleador {
                     
                     """);
         }
+        return elegirLuchador;
     }
 }
 

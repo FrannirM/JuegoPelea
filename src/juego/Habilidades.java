@@ -1,5 +1,7 @@
 package juego;
 
+import java.util.Scanner;
+
 public class Habilidades {
     //Atributos
 
@@ -21,5 +23,24 @@ public class Habilidades {
     final private double grandandpound = 79.8;
     final private double triangulo = 57.3;
 
+    //Metodo para elegir primer modificador
+    static int elegirBackground(int modificadorBackground) {
+
+        var salida = false;
+
+        while (!salida) {
+            System.out.println("Jugador 1 Elegi tu Background: ");
+            System.out.println("""
+                    1-Boxeo
+                    2-Karate
+                    3-Lucha
+                    4-BJJ
+                    5-Muay Thai
+                    """);
+            var tipoBackground = Integer.parseInt(var consola = new Scanner(System.in));
+        }
+
+        return modificadorBackground;
+    }
 
 }
